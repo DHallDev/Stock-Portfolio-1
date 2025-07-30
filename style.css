@@ -1,0 +1,364 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-color:  black;
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    color: white;
+}
+
+
+a svg:hover {
+    fill: #FA8128;
+}
+
+nav {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.navbar {
+    height: 80px;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    gap: 1.2rem;
+    margin-right: ;
+    cursor: pointer;
+}
+
+.navbar > .nav-links {
+    font-size: 25px;
+    letter-spacing: 4px;
+}
+
+.nav-links a {
+    color: white;
+    position: relative;
+    padding: 5px;
+}
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 0px;
+    bottom: 0;
+    left: 0;
+    background-color: #FA8128;
+    transition: all 0.4s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+span {
+    color: #FA8128;
+}
+
+.container {
+    padding-top: 200px;
+}
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.info > h1 {
+    font-size: 4rem;
+}
+
+.info > p {
+    font-size: 25px;
+}
+
+.socials {
+    margin-top: 40px;
+    margin-left: 55px;
+    display: flex;
+    gap: 50px;
+}
+
+.pic > img{
+    height: 420px;
+    width: 420px;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    align-content: center;
+}
+
+.about-profile img {
+    height: 400px;
+    width: 400px;
+    border-radius: 15px;
+}
+
+.about-profile {
+    margin: auto;
+    position: relative;
+}
+
+.about-info {
+    border: 1px solid #FA8128;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    align-items: center;
+    gap: 10px;
+}
+
+.about-info > h2 {
+    font-size: 3rem;
+}
+
+.about-info > p {
+    font-size: 1.3rem;
+}
+
+.experience > h2 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.experience > .skill-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.8rem;
+}
+
+.experience .card {
+    padding: 50px;
+    border: 2px solid white;
+    border-radius: 7px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: .5rem
+}
+
+.experience .card > h3 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.experience .card > p {
+    text-align: center;
+}
+
+.card:hover {
+    background-color: #71706E;
+}
+
+.project > h2 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 6rem;
+}
+
+.project-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    text-align: center;
+}
+
+.project-cards h3 {
+    font-size: 2rem;
+}
+
+.project-cards img {
+    object-fit: cover;
+    border: 2px solid #FA8128;
+    border-radius: 10px;
+    display: block;
+    margin: 1rem;
+    padding: 3px;
+    height: 400px;
+    width: 450px;
+}
+
+.project1 img{
+    background-color: white;
+}
+
+
+button {
+    width: 30%;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 100px;
+    margin-right: 10px;
+}
+
+.demo {
+    background-color: #FA8128;
+}
+
+.code:hover {
+    background-color: #C7C9CB;
+}
+
+.demo:hover {
+    background-color: #fc6a03;
+}
+
+.contact-me {
+    padding: 9rem 3rem;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contact {
+    padding: 2rem;
+    background-color: #FA8128;
+}
+
+.contact:hover {
+    background-color: #fc6a03;
+}
+
+.contact a {
+    color: black;
+}
+
+footer {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 2rem;
+}
+
+.footer-nav a {
+    color: white;
+}
+
+.footer-nav a:hover{
+    color: #FA8128;
+}
+
+.footer-nav {
+    display: flex;
+    gap: 2rem
+}
+
+@media (max-width: 1024px) {
+
+    nav {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    header .pic > img {
+        height: 300px;
+        width: 300px;
+    }
+
+    header .info > h1 {
+        font-size: 2rem;
+    }
+
+    header .info > p {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    header .socials {
+        margin: 10px;
+        justify-content: center;
+    }
+    header svg {
+        width: 30px;
+        height: 30px;
+    }
+
+    .about {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+    }
+
+    .about .about-profile img {
+        height: 300px;
+        width: 300px;
+    }
+
+    .about-info {
+        margin: auto;
+    }
+
+    .experience .skill-card {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .experience .card {
+        padding: 4rem 1rem;
+        margin: auto;
+    }
+
+    .project-cards {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+        align-items: center;
+    }
+
+    .project-cards h3 {
+        margin:auto;
+    }
+
+    .project-cards img {
+        margin: auto;
+        border-radius: 5px;
+        height: 200px;
+        width: 200px
+    }
+
+    .project-cards button {
+        font-size: 10px;
+        padding: .5rem;
+        margin-top: 10px;
+
+    }
+
+    .contact-me {
+        width: 100%;
+    }
+
+    .contact-me button {
+        margin-right: 100px;
+        padding: 1rem;
+    }
+
+}
